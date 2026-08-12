@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1f2937;
+}
+
+h1 {
+  color: #1d4ed8;
+  text-align: center;
+  font-size: 42px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+#hero p {
+  color: #4b5563;
+  font-size: 18px;
+}
+nav {
+  background-color: #111827;
+  padding: 18px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  display: block;
+  margin: 25px auto;
+}  
+  .profile-photo2 {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  display: block;
+  margin: 25px auto;
+  border: 4px solid #2454d3;
+}
