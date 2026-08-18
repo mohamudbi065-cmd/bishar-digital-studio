@@ -258,3 +258,93 @@ main {
     grid-template-columns: 1fr;
   }
 }
+/* About section */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  padding: 85px 45px;
+  margin-top: 55px;
+  background-color: #111827;
+  border-radius: 18px;
+  color: white;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 18px;
+  display: block;
+  border: 6px solid #3b82f6;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.section-label {
+  color: #93c5fd;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 0 12px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.about-content p {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.about-content h3 {
+  color: white;
+  margin: 26px 0 14px;
+}
+
+.why-choose-us {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-choose-us li {
+  color: #dbeafe;
+  margin: 11px 0;
+}
+
+.why-choose-us li::before {
+  content: "✓";
+  color: #60a5fa;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* About section on phones */
+@media (max-width: 700px) {
+  #about {
+    flex-direction: column;
+    gap: 30px;
+    padding: 45px 25px;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+}
