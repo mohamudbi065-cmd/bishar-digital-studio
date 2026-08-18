@@ -348,3 +348,91 @@ main {
     font-size: 30px;
   }
 }
+/* Contact section */
+#contact {
+  padding: 85px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(31, 41, 55, 0.14);
+}
+
+.contact-icon {
+  font-size: 30px;
+}
+
+.contact-card h3 {
+  color: #1d4ed8;
+  margin: 0 0 7px;
+}
+
+.contact-card p {
+  color: #4b5563;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+  padding: 35px 20px;
+  background-color: #111827;
+  color: #d1d5db;
+  text-align: center;
+}
+
+.footer-name {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 0 15px;
+}
+
+.footer-links {
+  margin-bottom: 18px;
+}
+
+.footer-links a {
+  color: #93c5fd;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+footer p:last-child {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Contact layout on phones */
+@media (max-width: 700px) {
+  #contact {
+    padding: 60px 0;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
