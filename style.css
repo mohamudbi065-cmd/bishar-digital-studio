@@ -518,3 +518,157 @@ footer p:last-child {
         font-size: 16px;
     }
 }
+
+/* =====================================
+   AK FITNESS CO BUSINESS PAGE
+===================================== */
+
+body:has(.product-grid) {
+    background-color: #f3f5f4;
+}
+
+/* Business header */
+
+body:has(.product-grid) header {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+body:has(.product-grid) header h1 {
+    color: #22c55e;
+    margin: 0 0 8px;
+    letter-spacing: 2px;
+}
+
+body:has(.product-grid) header p {
+    color: #d1d5db;
+    margin: 0;
+}
+
+/* Navigation */
+
+body:has(.product-grid) nav {
+    background-color: #166534;
+}
+
+body:has(.product-grid) nav a:hover {
+    color: #bbf7d0;
+}
+
+/* Main container */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.container section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+}
+
+.container section h1 {
+    color: #166534;
+    font-size: 38px;
+}
+
+.container section h2 {
+    color: #166534;
+    margin-bottom: 15px;
+}
+
+.container section p {
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+/* Product grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.product-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-left: 5px solid #22c55e;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+    color: #166534;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.product-card p {
+    color: #374151;
+    font-weight: bold;
+}
+
+/* WhatsApp contact */
+
+.container section a {
+    display: inline-block;
+    background-color: #16a34a;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container section a:hover {
+    background-color: #15803d;
+}
+
+/* Business page footer */
+
+body:has(.product-grid) footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 25px 12px;
+    }
+
+    .container section {
+        padding: 25px 18px;
+    }
+
+    .container section h1 {
+        font-size: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 22px;
+    }
+}
+
