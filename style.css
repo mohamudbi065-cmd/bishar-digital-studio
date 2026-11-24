@@ -210,7 +210,10 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
-
+/* Four business service columns on desktop */
+#services .service-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
 .service-card {
   background-color: white;
   padding: 28px 24px;
